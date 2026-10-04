@@ -2,7 +2,7 @@
 
 Personal portfolio of **Chinthana G Bhat**, an MCA student at Bangalore Institute of Technology working toward a full stack Java developer role.
 
-**Live site:** https://chinthanabhat.github.io/Portfolio/
+**Live site:** https://chinthanabhat.github.io/portfolio/
 
 The page is plain HTML, CSS and JavaScript, hosted on GitHub Pages. The visitor counter in the footer is a small serverless backend on AWS, which I built to learn the basics of AWS.
 
