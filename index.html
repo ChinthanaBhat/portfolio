@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chinthana G Bhat | Full Stack Java Developer</title>
+  <meta name="description" content="Portfolio of Chinthana G Bhat, an MCA student at Bangalore Institute of Technology building full stack Java and Node.js applications. The visitor counter runs on AWS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top">Welcome to my Portfolio</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#how">How it works</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <h1>Chinthana G Bhat</h1>
+    <p class="role">MCA student and aspiring full stack Java developer. I build web applications from the database up.</p>
+    <div class="actions">
+      <a class="btn primary">Contact for Resume</a>
+      <a class="btn" href="https://github.com/ChinthanaBhat" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/chinthanabhat" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm an MCA student (2025 to 2027) at Bangalore Institute of Technology, working toward a career as a full stack Java developer. I like building complete applications: designing the database, writing the back end, and connecting it to a working interface.</p>
+    <p>My projects use Java with Servlets, JSP and JDBC, and Node.js with Express, on top of MySQL and PostgreSQL. I also co-authored a research paper, published in IJIRT, on the architecture and testing of an Android application. I'm also learning AWS to understand how applications are deployed, and the visitor counter on this site is my first project on it.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="chips">
+      <li>Java</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>C</li>
+      <li>SQL</li>
+      <li>Jakarta EE: Servlets, JSP</li>
+      <li>JDBC</li>
+      <li>Node.js, Express</li>
+      <li>Sequelize</li>
+      <li>REST APIs</li>
+      <li>WebSockets</li>
+      <li>MySQL</li>
+      <li>PostgreSQL</li>
+      <li>HTML5, CSS3</li>
+      <li>Git, GitHub</li>
+      <li>Maven, Tomcat</li>
+      <li>Data structures and algorithms</li>
+      <li>AWS: Lambda, DynamoDB, IAM, S3</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3>Exam Hall Locator and Seating Allocation System</h3>
+      <p>A web application that automates exam seat allocation for 500+ students. It includes a greedy allocation algorithm, seat lookup by USN, room-wise reports, PDF hall tickets, email notifications, bulk CSV import, live allocation progress over WebSockets, and an admin dashboard. The database is an 8-table normalized MySQL schema with triggers, stored procedures, and views.</p>
+      <p class="meta">Java, Servlets, JSP, JDBC, MySQL, WebSocket, Tomcat, Maven</p>
+      <a href="https://github.com/ChinthanaBhat" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+
+    <article class="project">
+      <h3>Live Auction Platform</h3>
+      <p>A full-stack auction site with secure registration and login, live bidding, and automatic closing of auctions when their timers expire. A PostgreSQL stored procedure validates each bid atomically, and a scheduled job picks the winners. REST APIs cover auctions, bids, and per-user bid history.</p>
+      <p class="meta">Node.js, Express, PostgreSQL, Sequelize, JavaScript</p>
+      <a href="https://github.com/ChinthanaBhat" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+
+    <article class="project">
+      <h3>Serverless visitor counter on AWS</h3>
+      <p>The counter in this page's footer. A Python Lambda function behind a Function URL adds one to an item in a DynamoDB table each time the page loads. I attached an IAM policy that allows a single action on that one table, and configured CORS so the browser can call it.</p>
+      <p class="meta">AWS Lambda, DynamoDB, IAM, Function URL, Python</p>
+      <a href="https://github.com/ChinthanaBhat" target="_blank" rel="noopener">View on GitHub</a>
+    </article>
+
+    <article class="project">
+      <h3>Rural Job Hub (Android application)</h3>
+      <p>Built the job-seeker registration and profile module in a team of four, designed to be easy for non-technical rural users. Co-authored the IJIRT research paper on its architecture, modules, and testing.</p>
+      <p class="meta">Android, Java, Firebase</p>
+    </article>
+
+    <article class="project">
+      <h3>2D arcade game (Flappy Bird clone)</h3>
+      <p>A 2D game with physics-based movement and collision detection around a continuous game loop, organized into modular, reusable code.</p>
+      <p class="meta">C, Raylib</p>
+    </article>
+  </section>
+
+  <section id="how">
+    <h2>How this site works</h2>
+    <p>The page is static HTML, CSS and JavaScript, hosted on GitHub Pages. The visitor count comes from AWS: your browser calls a Lambda Function URL, and the function adds one to a counter stored in DynamoDB, then returns the new number.</p>
+    <ol class="flow" aria-label="Page path">
+      <li>Browser</li>
+      <li>GitHub Pages</li>
+    </ol>
+    <ol class="flow" aria-label="Counter path">
+      <li>Browser</li>
+      <li>Lambda Function URL</li>
+      <li>DynamoDB</li>
+    </ol>
+  </section>
+
+  <section id="education">
+    <h2>Education and certifications</h2>
+    <ul class="plain">
+      <li>Master of Computer Applications, Bangalore Institute of Technology, 2025 to 2027 (CGPA 9.5)</li>
+      <li>Bachelor of Computer Applications, MMK &amp; SDM MMV, Mysore, 2022 to 2025 (CGPA 9.37)</li>
+      <li>AWS Cloud Foundations, AWS Training and Certification</li>
+      <li>Deloitte Data Analytics Job Simulation, Forage</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email me at <a href="mailto:chinthanagbhat@gmail.com">chinthanagbhat@gmail.com</a> or message me on <a href="https://www.linkedin.com/in/chinthanabhat" target="_blank" rel="noopener">LinkedIn</a>.</p>
+  </section>
+
+</main>
+
+<footer>
+  <p>You are visitor number <strong id="count">...</strong></p>
+  <p class="small">Hosted on GitHub Pages. Visitor counter runs on AWS Lambda and DynamoDB.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
